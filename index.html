@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrashToCash Workshop 🛠️</title>
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #c5c6c7;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 2px solid #45f3ff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            color: #45f3ff;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+        }
+        header p {
+            margin: 15px 0 0 0;
+            font-size: 1.2rem;
+            color: #66fcf1;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .catalog {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background-color: #1f2833;
+            border: 1px solid #2f3e46;
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(69, 243, 255, 0.2);
+            border-color: #45f3ff;
+        }
+        .card-img {
+            width: 100%;
+            height: 220px;
+            background: linear-gradient(45deg, #0b0c10, #1f2833);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #66fcf1;
+            font-size: 1.1rem;
+            font-weight: bold;
+            position: relative;
+            letter-spacing: 1px;
+        }
+        .status-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background-color: #45f3ff;
+            color: #0b0c10;
+            padding: 6px 14px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            border-radius: 30px;
+            box-shadow: 0 0 10px rgba(69, 243, 255, 0.5);
+        }
+        .card-content {
+            padding: 25px;
+        }
+        .card-title {
+            margin: 0 0 12px 0;
+            font-size: 1.5rem;
+            color: #fff;
+        }
+        .card-desc {
+            color: #c5c6c7;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .card-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .price {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #ff007f;
+            text-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+        }
+        .buy-btn {
+            background-color: transparent;
+            border: 2px solid #45f3ff;
+            color: #45f3ff;
+            padding: 10px 22px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .buy-btn:hover {
+            background-color: #45f3ff;
+            color: #0b0c10;
+            box-shadow: 0 0 15px rgba(69, 243, 255, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TrashToCash Workshop 🛠️</h1>
+        <p>Даємо крутим речам другий шанс. Знайдено, відремонтовано та протестовано мною в 15 років.</p>
+    </header>
+
+    <div class="container">
+        <div class="catalog">
+            
+            <div class="card">
+                <div class="card-img">
+                    📷 [ТУТ БУДЕ ФОТО]
+                    <span class="status-badge">ВІДНОВЛЕНО 🛠️</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ретро-ігрова приставка</h3>
+                    <p class="card-desc">Була знайдена із повністю розбитим гніздом живлення. Акуратно перепаяв новий порт, очистив плату від пилу та повністю замінив термопасту. Тепер працює ідеально!</p>
+                    <div class="card-footer">
+                        <span class="price">450 грн</span>
+                        <a href="https://t.me" target="_blank" class="buy-btn">Хочу купити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    📷 [ТУТ БУДЕ ФОТО]
+                    <span class="status-badge">ВІДНОВЛЕНО 🛠️</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Механічна клавіатура</h3>
+                    <p class="card-desc">Попередній власник залив її солодким чаєм і просто викинув. Я повністю розібрав її, промив плату спеціальним спиртом, замінив 4 згорілі перемикачі (світчі).</p>
+                    <div class="card-footer">
+                        <span class="price">800 грн</span>
+                        <a href="https://t.me" target="_blank" class="buy-btn">Хочу купити</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-img">
+                    📷 [ТУТ БУДЕ ФОТО]
+                    <span class="status-badge">ВІДНОВЛЕНО 🛠️</span>
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Ніжний неоновий світильник</h3>
+                    <p class="card-desc">Проблема була банальна — відірвався дріт біля вимикача. Я зачистив контакти, надійно припаяв усе назад і закрив термоусадкою для повної безпеки.</p>
+                    <div class="card-footer">
+                        <span class="price">300 грн</span>
+                        <a href="https://t.me" target="_blank" class="buy-btn">Хочу купити</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
